@@ -39,10 +39,10 @@ while True:
             bloc_y1 -= 1
             bloc_y2 -= 1
     elif mouvement == 'b':
-        if bloc_y1 < hauteur - 1 and bloc_y2 < hauteur - 1 and plateau[bloc_y1+1][bloc_x1] == ' ' and plateau[bloc_y2+1][bloc_x2] == ' ':
+        if bloc_y1 < hauteur - 1 and bloc_y2 < hauteur - 1 and plateau[bloc_y1+1][bloc_x1] == ' ' and plateau[bloc_y1+1][bloc_x2] == ' ':
             plateau[bloc_y1][bloc_x1] = plateau[bloc_y2][bloc_x2] = ' '
             bloc_y1 += 1
-            bloc_y2 += 1
+        bloc_y2 += 1
     elif mouvement == 't':
         if bloc_x1 == bloc_x2:
             if plateau[bloc_y1+1][bloc_x1] == ' ':
